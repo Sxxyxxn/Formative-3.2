@@ -1,0 +1,127 @@
+h1,h2,h3,h4,h5,h6{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.header-wrapper{
+    height: 400px;
+    /* margin-top: 20px; */
+    /* background-color: coral; */
+    background-image: url(../images/wider-top-wave.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: blue;
+}
+.gardner{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    text-align: center;
+    line-height: 30px;
+    
+    transform: translate(-50%,-25%);
+}
+
+.gardner-img{
+    border-radius: 100px;
+    background-color: cornflowerblue;
+    height: 200px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.gardner-bio{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.email-icon img{
+    height: 15px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.gardners-content{
+    border: 1px solid black;
+    width: 80vw;
+    height: auto;
+    position: relative;
+    top: 45px;
+    z-index: 11;
+    margin: 0 auto;
+    display: flex;
+    
+
+}
+
+.colorcode{
+    width: 3%;
+    background-color: aqua;
+    
+    
+}
+
+.garden-content-wrapper{
+    
+    width: 97%;
+    
+    
+    background-color: blanchedalmond;
+   
+}
+
+.gardner-task-head{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+.date{
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.gardner-task-body{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.garden-task-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* .edit{
+    padding: 10px;
+    width: 70px;
+    border-radius: 10%;
+} */
+
+.edit-icon{
+    display: flex;
+    flex-direction: row;
+   margin-left: auto;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
+    
+
+}
+
+.cancel{
+    margin-left: 20px;
+}
+
+
