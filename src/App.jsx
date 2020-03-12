@@ -10,7 +10,7 @@ import Axios from "axios";
 
 export default class App extends Component {
   componentDidMount() {
-    Axios.post("http://localhost:4002/api/users").then(res => {
+    Axios.get("http://localhost:4003/api/gardener").then(res => {
       console.log(res.data);
     });
   }
