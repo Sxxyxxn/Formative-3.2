@@ -22,37 +22,106 @@ class Garden extends React.Component {
             </div>
           </div>
 
-          <div className="gardners-content">
-            <div className="colorcode"></div>
-            <div className="garden-content-wrapper">
-              <div className="gardner-task-head">
-                <h2>Western Garden Part</h2>
-                <h5 className="date">20/03/2020</h5>
-                <div className="edit-icon">
-                  <img src={edit} alt="email" className="edit" height="20" />
-                  <img src={cancel} alt="email" className="cancel" height="20" />
+
+          {/* SECTION-1  */}{/* SECTION-1  */}{/* SECTION-1  */}{/* SECTION-1  */}{/* SECTION-1  */}
+          <div className="garden-bg">
+            <div className="gardners-content">
+              <div className="colorcode"></div>
+              <div className="garden-content-wrapper">
+                <div className="gardner-task-head">
+                  <h2>Western Garden Part</h2>
+                  <h5 className="date">20/03/2020</h5>
+                  <div className="edit-icon">
+                    <img src={edit} alt="email" className="edit" height="20" />
+                    <img src={cancel} alt="email" className="cancel" height="20" />
+                  </div>
+
                 </div>
-                {/* <div className="edit-icon">
-                  
 
-                </div> */}
-              </div>
-
-              <div className="gardner-task-body">
-                <p>
-                  Lorem Ipsum is simply dummy
-                   text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry
-                    's standard dummy text ever since the 1500s,
-                     when an unknown printer took a galley of type
-                      and scrambled it to make a type specimen book.
+                <div className="gardner-task-body">
+                  <p>
+                    Lorem Ipsum is simply dummy
+                     text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry
+                      's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
                 </p>
+                </div>
+
               </div>
 
-              {/* <div className="garden-task-edit">
-                <button className="edit"><h4>Edit</h4></button>
-              </div> */}
             </div>
+
+            {/* SECTION-1  */}{/* SECTION-1  */}{/* SECTION-1  */}{/* SECTION-1  */}
+
+
+            {/* SECTION-2 */}{/* SECTION-2 */}{/* SECTION-2 */}{/* SECTION-2 */}
+
+            <div className="gardners-content-2">
+              <div className="colorcode-2"></div>
+              <div className="garden-content-wrapper">
+                <div className="gardner-task-head">
+                  <h2>Western Garden Part</h2>
+                  <h5 className="date">20/03/2020</h5>
+                  <div className="edit-icon">
+                    <img src={edit} alt="email" className="edit" height="20" />
+                    <img src={cancel} alt="email" className="cancel" height="20" />
+                  </div>
+
+                </div>
+
+                <div className="gardner-task-body">
+                  <p>
+                    Lorem Ipsum is simply dummy
+                     text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry
+                      's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                </p>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* SECTION-2 */}{/* SECTION-2 */}{/* SECTION-2 */}{/* SECTION-2 */}
+
+            {/* SECTION-3 */}{/* SECTION-3 */}{/* SECTION-3 */}{/* SECTION-3 */}
+
+            <div className="gardners-content-3">
+              <div className="colorcode-3"></div>
+              <div className="garden-content-wrapper">
+                <div className="gardner-task-head">
+                  <h2>Western Garden Part</h2>
+                  <h5 className="date">20/03/2020</h5>
+                  <div className="edit-icon">
+                    <img src={edit} alt="email" className="edit" height="20" />
+                    <img src={cancel} alt="email" className="cancel" height="20" />
+                  </div>
+
+                </div>
+
+                <div className="gardner-task-body">
+                  <p>
+                    Lorem Ipsum is simply dummy
+                     text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry
+                      's standard dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                </p>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* SECTION-3 */}{/* SECTION-3 */}{/* SECTION-3 */}{/* SECTION-3 */}{/* SECTION-3 */}
+
 
           </div>
         </div>

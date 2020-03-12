@@ -10,8 +10,13 @@ a{
     /* border: 2px solid black; */
     margin: 0 auto;
     overflow: hidden;
-    /* background-color: #2C2E3B; */
-    background: #3a2fb2;
+    background-color: ghostwhite;
+  
+    background-image: url(../images/desktop-bottom-wave.svg);
+    background-size:1000px;
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 10%;
+ 
 
 
 }
@@ -22,7 +27,6 @@ a{
     align-content: flex-end;
     align-items: center;
     padding: 40px;
-    background-color:white;
     color: black;
 }
 
@@ -33,7 +37,7 @@ a{
     overflow: hidden;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
+    
     
 
     
@@ -42,7 +46,7 @@ a{
 .section-1, .section-2, .section-3, .section-4{
     width: 140px;
     height: 140px;
-   
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.46);
     margin: 10px;
     text-align: center;
     border-radius: 10px;
