@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../Components/nav";
 import "../css/sections.css";
+import "../css/add.css";
 import email from "../images/email.svg";
 import phone from "../images/phone.svg";
 import edit from "../images/edit.svg";
@@ -11,7 +11,6 @@ class Garden extends React.Component {
   render() {
     return (
       <div className="Garden">
-        <Nav />
         <div className="garden-wrapper">
           <div className="header-wrapper">
             <div className="gardner">
@@ -66,17 +65,14 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
             {/* SECTION-1  */}
             {/* SECTION-1  */}
             {/* SECTION-1  */}
             {/* SECTION-1  */}
-
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
-
             <div className="gardners-content-2">
               <div className="colorcode-2"></div>
               <div className="garden-content-wrapper">
@@ -105,17 +101,14 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
-
             {/* SECTION-3 */}
             {/* SECTION-3 */}
             {/* SECTION-3 */}
             {/* SECTION-3 */}
-
             <div className="gardners-content-3">
               <div className="colorcode-3"></div>
               <div className="garden-content-wrapper">
@@ -144,15 +137,14 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
-            {/* SECTION-3 */}
-            {/* SECTION-3 */}
-            {/* SECTION-3 */}
-            {/* SECTION-3 */}
-            {/* SECTION-3 */}
-            <button>
-              <Link to="/adduser">Add A Gardener</Link>
+            <button className="add-btn">
+              <Link to="/addgardener">Add A Gardener</Link>
             </button>
+            {/* SECTION-3 */}
+            {/* SECTION-3 */}
+            {/* SECTION-3 */}
+            {/* SECTION-3 */}
+            {/* SECTION-3 */}
           </div>
         </div>
       </div>
