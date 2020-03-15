@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import "../css/add.css";
+import headerwave from "../images/wider-top-wave.svg";
 
 export default class AddGardener extends Component {
   constructor(props) {
@@ -28,26 +30,29 @@ export default class AddGardener extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.userSubmit} ref={this.myRef}>
-          <label>First Name:</label>
-          <input type="text" name="gardener-first-name" required />
+        <div className="header-wave">
+          <img src={headerwave} alt="" />
+          <form className="addform" onSubmit={this.userSubmit} ref={this.myRef}>
+            <label>First Name:</label>
+            <input type="text" name="gardener-first-name" required />
 
-          <label>Last Name:</label>
-          <input type="text" name="gardener-last-name" required />
+            <label>Last Name:</label>
+            <input type="text" name="gardener-last-name" required />
 
-          <label>Email:</label>
-          <input type="text" name="gardener-email" />
+            <label>Email:</label>
+            <input type="text" name="gardener-email" />
 
-          <label>Phone:</label>
-          <input type="text" name="gardener-phone-number" />
+            <label>Phone:</label>
+            <input type="text" name="gardener-phone-number" />
 
-          <label>Address:</label>
-          <input type="text" name="gardener-address" />
+            <label>Address:</label>
+            <input type="text" name="gardener-address" />
 
-          <button type="submit" className="submit-btn">
-            Submit
-          </button>
-        </form>
+            <button type="submit" className="submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     );
   }
