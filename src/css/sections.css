@@ -19,7 +19,6 @@ h6 {
   color: black;
 }
 
-
 .gardner {
   position: absolute;
   top: 25%;
@@ -57,12 +56,8 @@ h6 {
   z-index: 11;
   margin: 0 auto;
   display: flex;
-<<<<<<< HEAD
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.20);
-  margin-bottom: 50px;
-=======
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
->>>>>>> 8913c80a25ac3c4cd8b85325e7f12348ba8af3a9
+  margin-bottom: 50px;
 }
 
 .gardners-content-2 {
@@ -160,15 +155,8 @@ h6 {
   margin-left: 20px;
 }
 
-<<<<<<< HEAD
-.garden-bg{
-    background-color: ghostwhite;
-    height: auto;
-    margin-bottom: 100px;
-   
-=======
 .garden-bg {
   background-color: ghostwhite;
-  height: 100vh;
->>>>>>> 8913c80a25ac3c4cd8b85325e7f12348ba8af3a9
+  height: auto;
+  margin-bottom: 100px;
 }
