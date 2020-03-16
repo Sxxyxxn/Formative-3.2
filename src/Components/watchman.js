@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import Nav from "../components/nav";
-=======
-import Nav from "./nav";
->>>>>>> 8913c80a25ac3c4cd8b85325e7f12348ba8af3a9
 import "../css/sections.css";
 import email from "../images/email.svg";
 import phone from "../images/phone.svg";

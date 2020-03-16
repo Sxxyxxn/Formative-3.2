@@ -38,13 +38,11 @@ export default class EditTask extends Component {
         e.preventDefault();
         var formData = new FormData(this.myRef.current);
     
-        var dataToUpdate = {
-          first_name: formData.get("first_name")
-        };
+
     
         Axios.put(
           `http://localhost:3002/api/chef/${this.props.id}`,
-          dataToUpdate
+          formData
         ).then(res => {
           console.log(res);
         });
@@ -54,7 +52,7 @@ export default class EditTask extends Component {
           <div>
             <form className="special" onSubmit={this.editPerson} ref={this.myRef}>
               <label>First name</label>
-              <input type="text" name="firt_name" />
+              <input type="text" name="first_name" />
     
               <label>Last name:</label>
               <input type="text" name="last_name" />

@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import Nav from "../components/nav";
 import "../css/sections.css";
 import email from "../images/email.svg"
@@ -8,14 +7,6 @@ import edit from "../images/edit.svg"
 import cancel from "../images/delete.svg"
 import InfoList from "./chef"
 import GetData from "./chef"
-=======
-import Nav from "./Nav";
-import "../css/sections.css";
-import email from "../images/email.svg";
-import phone from "../images/phone.svg";
-import edit from "../images/edit.svg";
-import cancel from "../images/delete.svg";
->>>>>>> 8913c80a25ac3c4cd8b85325e7f12348ba8af3a9
 
 class Garden extends React.Component {
   render() {

@@ -27,6 +27,9 @@ export default class AddTask extends Component {
         console.log("A user was submitted");
     
         var formData = new FormData(this.myRef.current);
+        var settings = { headers: { "Content-Type": "multipart/form-data" } };
+
+        
     
         var dataToCreate = {
           first_name: formData.get("task-title"),
@@ -34,7 +37,7 @@ export default class AddTask extends Component {
       
         };
     
-        Axios.post(`http://localhost:3002/api/chef`, dataToCreate).then(res => {
+        Axios.post(`http://localhost:3002/api/chef/with-form-image`, formData,settings).then(res => {
           console.log(res.data);
         });
       };
@@ -52,6 +55,11 @@ export default class AddTask extends Component {
               <button type="submit" className="submit-btn">
                 Submit
               </button>
+
+              <label>File</label>
+              <input type="file" name="file" />
+
+
             </form>
           </div>
         );
