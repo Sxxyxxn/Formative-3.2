@@ -1,26 +1,22 @@
 import React from "react";
-<<<<<<< HEAD
-import Nav from "../components/nav";
-=======
-import Nav from "./nav";
->>>>>>> 8913c80a25ac3c4cd8b85325e7f12348ba8af3a9
 import "../css/sections.css";
+import "../css/add.css";
 import email from "../images/email.svg";
 import phone from "../images/phone.svg";
 import edit from "../images/edit.svg";
 import cancel from "../images/delete.svg";
+import { Link } from "@reach/router";
 
 class Garden extends React.Component {
   render() {
     return (
       <div className="Garden">
-        <Nav />
         <div className="garden-wrapper">
           <div className="header-wrapper">
             <div className="gardner">
               <div className="gardner-img"></div>
 
-              <div className="gardner-bio">Mr Watchman</div>
+              <div className="gardner-bio">Mr Gardner</div>
               <div className="gardner-email">
                 <div className="email-icon">
                   <img src={email} alt="email" /> mrgardner.nz@gmail.com
@@ -69,17 +65,14 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
             {/* SECTION-1  */}
             {/* SECTION-1  */}
             {/* SECTION-1  */}
             {/* SECTION-1  */}
-
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
-
             <div className="gardners-content-2">
               <div className="colorcode-2"></div>
               <div className="garden-content-wrapper">
@@ -108,17 +101,14 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
             {/* SECTION-2 */}
-
             {/* SECTION-3 */}
             {/* SECTION-3 */}
             {/* SECTION-3 */}
             {/* SECTION-3 */}
-
             <div className="gardners-content-3">
               <div className="colorcode-3"></div>
               <div className="garden-content-wrapper">
@@ -147,7 +137,9 @@ class Garden extends React.Component {
                 </div>
               </div>
             </div>
-
+            <button className="add-btn">
+              <Link to="/addgardener">Add A Gardener</Link>
+            </button>
             {/* SECTION-3 */}
             {/* SECTION-3 */}
             {/* SECTION-3 */}
