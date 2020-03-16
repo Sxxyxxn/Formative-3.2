@@ -56,7 +56,11 @@ h6 {
   z-index: 11;
   margin: 0 auto;
   display: flex;
+<<<<<<< HEAD
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+=======
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.20);
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
   margin-bottom: 50px;
 }
 
@@ -155,8 +159,16 @@ h6 {
   margin-left: 20px;
 }
 
+<<<<<<< HEAD
 .garden-bg {
   background-color: ghostwhite;
   height: auto;
   margin-bottom: 100px;
+=======
+.garden-bg{
+    background-color: ghostwhite;
+    height: auto;
+    margin-bottom: 100px;
+   
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
 }

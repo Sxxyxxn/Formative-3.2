@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: ghostwhite;
 }
@@ -5,6 +6,17 @@ body {
 a {
   color: black;
   text-decoration: none;
+=======
+body{
+    background-color: ghostwhite;
+    
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
 }
 
 .home_screen {

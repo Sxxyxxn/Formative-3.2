@@ -45,6 +45,7 @@ export default class AddTask extends Component {
           <label>Task Description</label>
           <input type="text" name="task-discription" required />
 
+<<<<<<< HEAD
           <button type="submit" className="submit-btn">
             Submit
           </button>
@@ -52,4 +53,53 @@ export default class AddTask extends Component {
       </div>
     );
   }
+=======
+    constructor(props) {
+        super(props);
+        this.myRef = React.createRef();
+      }
+    
+      userSubmit = e => {
+        e.preventDefault();
+        console.log("A user was submitted");
+    
+        var formData = new FormData(this.myRef.current);
+        var settings = { headers: { "Content-Type": "multipart/form-data" } };
+
+        
+    
+        var dataToCreate = {
+          first_name: formData.get("task-title"),
+          last_name: formData.get("task-discription"),
+      
+        };
+    
+        Axios.post(`http://localhost:3002/api/chef/with-form-image`, formData,settings).then(res => {
+          console.log(res.data);
+        });
+      };
+      render() {
+        return (
+          <div>
+            <form onSubmit={this.userSubmit} ref={this.myRef}>
+              <label>Task Title</label>
+              <input type="text" name="task-title" required />
+    
+              <label>Task Description</label>
+              <input type="text" name="task-discription" required />
+
+    
+              <button type="submit" className="submit-btn">
+                Submit
+              </button>
+
+              <label>File</label>
+              <input type="file" name="file" />
+
+
+            </form>
+          </div>
+        );
+      }
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
 }

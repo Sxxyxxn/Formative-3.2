@@ -30,7 +30,12 @@ export default class Chef extends Component {
   }
 
   getData = e => {
+<<<<<<< HEAD
     Axios.get("http://localhost:4003/api/chef").then(res => {
+=======
+
+    Axios.get("http://localhost:3002/api/chef").then(res => {
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
       this.setState({ users: res.data });
       console.log(this.state.users);
     });
@@ -46,6 +51,10 @@ export default class Chef extends Component {
   };
   render() {
     return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
       <div>
         {/* <Nav /> */}
 
@@ -54,6 +63,7 @@ export default class Chef extends Component {
             <div className="gardner-img"></div>
 
             <div className="gardner-bio">Mr Chef</div>
+<<<<<<< HEAD
             <div className="gardner-email">
               <div className="email-icon">
                 <img src={email} alt="email" /> mrgardner.nz@gmail.com
@@ -69,6 +79,16 @@ export default class Chef extends Component {
         </div>
 
         <button onClick={this.addtask}>add task</button>
+=======
+            <div className="gardner-email"><div className="email-icon"><img src={email} alt="email" /> mrgardner.nz@gmail.com</div>  </div>
+            <div className="gardner-number"><div className="email-icon"><img src={phone} alt="email" />0224590447</div></div>
+          </div>
+        </div>
+
+        
+
+<button onClick={this.addtask}>add task</button>
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
         <ul>
           {this.state.users.map((item, i) => {
             return (
@@ -99,9 +119,18 @@ class InfoList extends React.Component {
   }
 
   edituser = e => {
+<<<<<<< HEAD
     alert("haha");
     navigate("/edittask");
   };
+=======
+    alert("haha")
+    navigate(`/edittask/${this.props.id}`)
+  }
+
+
+
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
 
   removePerson = e => {
     e.preventDefault();
@@ -152,6 +181,7 @@ class InfoList extends React.Component {
                         onClick={this.removePerson}
                       />
                     </div>
+<<<<<<< HEAD
                   </div>
 
                   <div className="gardner-task-body">
@@ -165,6 +195,15 @@ class InfoList extends React.Component {
                   </div>
                 </div>
               </div>
+=======
+
+                  </div>
+
+                </div>
+             
+              
+
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
             </div>
           </div>
         </div>

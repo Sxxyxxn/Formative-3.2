@@ -1,8 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import "./css/home.css";
 import { Router } from "@reach/router";
+<<<<<<< HEAD
 import Nav from "./Components/nav";
+=======
+import Nav from "./components/nav"
+// import chef from "../images/chef.png";
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
 import chef from "./images/chef.png";
 import AddUser from "./adduser";
 import Chef from "./Components/chef";
@@ -15,12 +20,9 @@ export default class App extends React.Component {
       <React.Fragment>
         <Nav />
         <Router>
-          {/* <Home
-            path="/"
-            appstate={this.state.characters}
-            removePerson={this.removePerson}
-          /> */}
+
           <Chef
+<<<<<<< HEAD
             path="/chef"
             // allemployees={this.state.characters}
             // removePerson={this.removePerson}
@@ -52,8 +54,20 @@ export default class App extends React.Component {
           /> */}
           <EditTask path="/edittask" />
           <AddTask path="/addtask" />
+=======
+            path="/chef"/>
+    <EditTask path="/edittask/:id"/>
+    <AddTask path="/addtask"/>
+ 
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
         </Router>
       </React.Fragment>
     );
   }
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 3eadd78b1ea915f9bd8809f133d114afd745d30c
