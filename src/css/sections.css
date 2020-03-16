@@ -20,6 +20,8 @@ h6 {
   background-color: ghostwhite;
   color: black;
 }
+
+
 .gardner {
   position: absolute;
   top: 25%;
@@ -58,6 +60,7 @@ h6 {
   margin: 0 auto;
   display: flex;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.20);
+  margin-bottom: 50px;
 }
 
 .gardners-content-2 {
@@ -158,5 +161,7 @@ h6 {
 
 .garden-bg{
     background-color: ghostwhite;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 100px;
+   
 }

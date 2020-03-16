@@ -4,25 +4,11 @@ import './index.css';
 import App from './App.jsx';
 
 import {Router} from '@reach/router';
-import Garden from './Components/gardner';
-import Watchman from './Components/watchman';
-import Chef from './Components/chef';
-import Cleaner from './Components/cleaner'
+import Garden from './components/gardner';
+import Watchman from './components/watchman';
+import Chef from './components/chef';
+import Cleaner from './components/cleaner'
 
 
-ReactDOM.render(<Router>
-
-    <App path="/" />
-    
-
- 
-    <Garden path="/gardner" />
-    <Watchman path="/watchman" />
-    <Chef path="/chef"/>
-    <Cleaner path="/cleaner" />
-
-
-
-    
-</Router>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 

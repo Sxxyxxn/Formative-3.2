@@ -1,37 +1,67 @@
 import React from "react";
 import "./App.css";
 import "./css/home.css";
-import { Link } from "@reach/router";
-import Nav from "./Components/nav";
+import { Router } from "@reach/router";
+import Nav from "./components/nav"
 // import chef from "../images/chef.png";
 import chef from "./images/chef.png";
+import AddUser from "./adduser";
+import Chef from "./components/chef"
+import EditTask from "./components/edittask"
+import AddTask from "./components/addtask"
 
-function App() {
-  return (
-    <div className="App">
-      <div className="home_screen">
+
+export default class App extends React.Component{
+
+  
+  render() {
+    return (
+      <React.Fragment>
         <Nav />
-
-        <div className="categories-main">
-          <Link className="my-links" to="/gardner">
-            <div className="section-1"> </div>
-          </Link>
-
-          <Link className="my-links" to="/cleaner">
-            <div className="section-2"></div>
-          </Link>
-
-          <Link className="my-links" to="/chef">
-            <div className="section-3"></div>
-          </Link>
-
-          <Link className="my-links" to="/watchman">
-            <div className="section-4"></div>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
+        <Router>
+          {/* <Home
+            path="/"
+            appstate={this.state.characters}
+            removePerson={this.removePerson}
+          /> */}
+          <Chef
+            path="/chef"
+            // allemployees={this.state.characters}
+            // removePerson={this.removePerson}
+            // employeeListPopulated={this.state.employeeListPopulated}
+          />
+                    {/* <Gardner
+            path="/gardner"
+            // allemployees={this.state.characters}
+            // removePerson={this.removePerson}
+            // employeeListPopulated={this.state.employeeListPopulated}
+          /> */}
+                    {/* <Watchman
+            path="/watchman"
+            // allemployees={this.state.characters}
+            // removePerson={this.removePerson}
+            // employeeListPopulated={this.state.employeeListPopulated}
+          /> */}
+                    {/* <Cleaner
+            path="/cleaner"
+            // allemployees={this.state.characters}
+            // removePerson={this.removePerson}
+            // employeeListPopulated={this.state.employeeListPopulated}
+          /> */}
+          {/* <AddEmployee path="/addemployee" addPerson={this.addPerson} /> */}
+          {/* <EditEmployee
+            path="/edit/:uuid"
+            editPerson={this.editPerson}
+            getSinglePerson={this.getSinglePerson}
+          /> */}
+    <EditTask path="/edittask"/>
+    <AddTask path="/addtask"/>
+ 
+        </Router>
+      </React.Fragment>
+    );
+  }
 }
 
-export default App;
+
+

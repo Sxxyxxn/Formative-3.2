@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Components/nav";
+import Nav from "../components/nav";
 import "../css/sections.css";
 import email from "../images/email.svg"
 import phone from "../images/phone.svg"

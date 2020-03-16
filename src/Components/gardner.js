@@ -1,10 +1,15 @@
 import React from "react";
-import Nav from "../Components/nav";
+import { Component } from "react";
+import Nav from "./nav";
 import "../css/sections.css";
 import email from "../images/email.svg"
 import phone from "../images/phone.svg"
 import edit from "../images/edit.svg"
 import cancel from "../images/delete.svg"
+
+
+
+
 
 class Garden extends React.Component {
   render() {
@@ -131,3 +136,4 @@ class Garden extends React.Component {
 }
 
 export default Garden;
+

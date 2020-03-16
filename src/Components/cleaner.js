@@ -1,16 +1,26 @@
 import React from "react";
-import Nav from "../Components/nav";
+import Nav from "../components/nav";
 import "../css/sections.css";
 import email from "../images/email.svg"
 import phone from "../images/phone.svg"
 import edit from "../images/edit.svg"
 import cancel from "../images/delete.svg"
+import InfoList from "./chef"
+import GetData from "./chef"
 
 class Garden extends React.Component {
   render() {
     return (
+
+
+
+      
+
+      
       <div className="Garden">
+       
         <Nav />
+        
         <div className="garden-wrapper">
           <div className="header-wrapper">
             <div className="gardner">
@@ -126,6 +136,7 @@ class Garden extends React.Component {
           </div>
         </div>
       </div>
+
     );
   }
 }
